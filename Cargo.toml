@@ -1,0 +1,21 @@
+[package]
+name = "sx127x-common"
+version = "0.1.0"
+edition = "2024"
+authors = ["Jonathan D. Baker <jonathan@ardent.tech>"]
+description = "Common code for the Semtech Sx127x chip modems."
+keywords = ["embedded", "semtech", "sx127x"]
+categories = ["embedded", "no-std"]
+repository = "https://github.com/ardentTech/sx127x-common"
+license = "MIT OR Apache-2.0"
+exclude = ["CHANGELOG.md"]
+readme = "README.md"
+
+[dependencies]
+embedded-hal = { version = "1.0.0", optional = true }
+embedded-hal-async = { version = "1.0.0" }
+maybe-async = "0.2"
+
+[features]
+default = []
+sync = ["maybe-async/is_sync", "dep:embedded-hal"]
