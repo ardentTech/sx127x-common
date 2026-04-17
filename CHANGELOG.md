@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `error` module
 - `registers` module
 - `spi` module
+- `calculate` module with `frf` calculation
