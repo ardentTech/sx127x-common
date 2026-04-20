@@ -58,4 +58,3 @@ pub const AGC_REF: u8 = 0x61;
 pub const AGC_THRESH_1: u8 = 0x62;
 pub const AGC_THRESH_2: u8 = 0x63;
 pub const AGC_THRESH_3: u8 = 0x64;
-pub const PLL: u8 = 0x70;

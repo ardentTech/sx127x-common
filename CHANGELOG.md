@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `spi` module
 - `calculate` module with `frf` calculation
 - `InvalidInput` error
+- remove `PLL` register
