@@ -1,7 +1,16 @@
 # Sx127x-Common
-Common code for the Semtech [FSK](https://crates.io/crates/sx127x-fsk) and [LoRa](https://crates.io/crates/sx127x-lora) modems. The crate isn't terribly useful on its own but provides a
-single source of truth in the downstream modem drivers.
+
+`async`-first common code for the [FSK](https://crates.io/crates/sx127x-fsk) and [LoRa](https://crates.io/crates/sx127x-lora) modems on the Semtech sx127x chips. The crate isn't
+terribly useful on it's own but exists to reduce duplication in the downstream modem driver implementations.
 
 ### Cargo Features
-- `async` (default): async implementation
+
 - `sync`: sync implementation
+
+### Resources
+* [Datasheet](https://semtech.my.salesforce.com/sfc/p/E0000000JelG/a/2R0000001Rbr/6EfVZUorrpoKFfvaF_Fkpgp5kzjiNyiAbqcpqh9qSjE)
+* [Errata](https://semtech.my.salesforce.com/sfc/p/E0000000JelG/a/2R000000HSPv/sqi9xX0gs6hgzl2LoPwCK0TS9GDPlMwsXmcNzJCMHjw)
+
+### License
+* [MIT](https://github.com/ardentTech/sx127x/blob/main/LICENSE-MIT)
+* [Apache](https://github.com/ardentTech/sx127x/blob/main/LICENSE-APACHE)
