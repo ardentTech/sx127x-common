@@ -54,7 +54,17 @@ pub const PA_DAC_MASK: u8 = 0x07;
 
 // -------------------------------------------------------------------------------------------------
 pub const FORMER_TEMP: u8 = 0x5b;
+
+// RegAgcRef ---------------------------------------------------------------------------------------
 pub const AGC_REF: u8 = 0x61;
+pub const AGC_REF_AGC_REFERENCE_LEVEL: u8 = 0x3f;
+
+// -------------------------------------------------------------------------------------------------
+pub const AGC_REF_MASK: u8 = 0xc0;
 pub const AGC_THRESH_1: u8 = 0x62;
 pub const AGC_THRESH_2: u8 = 0x63;
 pub const AGC_THRESH_3: u8 = 0x64;
+
+// RegPll ------------------------------------------------------------------------------------------
+pub const PLL: u8 = 0x70;
+pub const PLL_PLL_BANDWIDTH: u8 = 0xc0;
