@@ -15,8 +15,10 @@ pub const PA_CONFIG_MAX_POWER_OFFSET: u8 = 0x4;
 pub const PA_CONFIG_OUTPUT_POWER_MASK: u8 = 0xf;
 pub const PA_CONFIG_OUTPUT_POWER_OFFSET: u8 = 0x0;
 
-// -------------------------------------------------------------------------------------------------
+// RegPaRamp ---------------------------------------------------------------------------------------
 pub const PA_RAMP: u8 = 0x0a;
+pub const PA_RAMP_MASK: u8 = 0xf;
+pub const PA_RAMP_OFFSET: u8 = 0x0;
 
 // RegOcp ------------------------------------------------------------------------------------------
 pub const OCP: u8 = 0x0b;
