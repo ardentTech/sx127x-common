@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `PLL` register addr, `PLL_PLL_BANDWIDTH` mask, `AGC_REF_AGC_REFERENCE_LEVE` mask
 - `DEFAULT_FREQUENCY_HZ` constant
+- add offsets for register masks
+
+### Changed
+
+- DIOx registers use `OFFSET` suffix instead of `SHIFT`
 
 ## [0.1.0] - 2026-04-22
 

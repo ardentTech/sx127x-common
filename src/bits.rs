@@ -1,4 +1,3 @@
-// TODO determine LSB offset from mask?
 pub const fn get_bits(byte: u8, mask: u8, lsb_offset: u8) -> u8 {
     (byte & mask) >> lsb_offset
 }
