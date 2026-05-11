@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - DIOx registers use `OFFSET` suffix instead of `SHIFT`
 
+### Fixed
+
+- `AGC_THRESH_x_AGC_STEP` masks and offsets
+
 ## [0.1.0] - 2026-04-22
 
 ### Added
