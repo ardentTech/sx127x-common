@@ -2,6 +2,19 @@ pub const fn get_bits(byte: u8, mask: u8, lsb_offset: u8) -> u8 {
     (byte & mask) >> lsb_offset
 }
 
+pub fn get_mask_offset(mut mask: u8) -> Option<u8> {
+    let mut offset = None;
+
+    for i in 0..8 {
+        if mask & 0x1 == 1 {
+            offset = Some(i);
+            break;
+        }
+        mask >>= 1;
+    }
+    offset
+}
+
 pub const fn set_bits(byte: &mut u8, bits: u8, mask: u8, lsb_offset: u8) {
     unset_bits(byte, mask);
     *byte |= (bits << lsb_offset) & mask
@@ -21,6 +34,21 @@ mod tests {
         let mask = 0b0011_1000;
         let lsb_offset = 0x3;
         assert_eq!(get_bits(byte, mask, lsb_offset), 0b101);
+    }
+
+    #[test]
+    fn get_mask_offset_floor() {
+        assert_eq!(get_mask_offset(0x1), Some(0));
+    }
+
+    #[test]
+    fn get_mask_offset_ceiling() {
+        assert_eq!(get_mask_offset(0x80), Some(7));
+    }
+
+    #[test]
+    fn get_mask_offset_none() {
+        assert_eq!(get_mask_offset(0b0), None);
     }
 
     #[test]

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `DEFAULT_FREQUENCY_HZ` constant
 - add offsets for register masks
 - `PA_RAMP` mask and offset
+- `get_mask_offset` fn
 
 ### Changed
 
@@ -21,6 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - `AGC_THRESH_x_AGC_STEP` masks and offsets
+
+### Removed
+
+- `InvalidFdev`, `InvalidPreambleLength` and `InvalidSymbolTimeout` members from `Sx127xError` enum
 
 ## [0.1.0] - 2026-04-22
 
